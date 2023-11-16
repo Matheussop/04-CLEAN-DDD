@@ -1,4 +1,4 @@
-import { UniqueEntityID } from "./unique-entity-id"
+import { UniqueEntityID } from './unique-entity-id'
 
 export class Entity<Props> {
   private _id: UniqueEntityID
@@ -10,8 +10,7 @@ export class Entity<Props> {
     this._id = id ?? new UniqueEntityID()
   }
 
-  get id(){
+  get id() {
     return this._id
   }
-
 }
