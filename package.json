@@ -12,7 +12,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.9.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite-tsconfig-paths": "^4.2.1"
   },
   "dependencies": {
     "dayjs": "^1.11.10",
