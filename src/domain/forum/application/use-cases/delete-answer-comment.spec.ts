@@ -1,3 +1,4 @@
+import { Either } from '@/core/either'
 import { InMemoryAnswerCommentsRepository } from 'test/repositories/in-memory-answer-comments-repository'
 import { DeleteAnswerCommentUseCase } from '@/domain/forum/application/use-cases/delete-answer-comment'
 import { makeAnswerComment } from 'test/factories/make-answer-comment'
@@ -38,6 +39,6 @@ describe('Delete Answer Comment', () => {
         answerCommentId: answerComment.id.toString(),
         authorId: 'author-2',
       })
-    }).rejects.toBeInstanceOf(Error)
+    }).rejects.toBeInstanceOf(Either)
   })
 })
